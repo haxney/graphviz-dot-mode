@@ -130,6 +130,7 @@
   "Major mode for editing Graphviz Dot files"
   :group 'tools)
 
+;;;###autoload
 (defun graphviz-dot-customize ()
   "Run \\[customize-group] for the `graphviz' group."
   (interactive)
@@ -746,6 +747,7 @@ then indent this and each subgraph in it."
 ;;;;
 ;;;; Preview
 ;;;;
+;;;###autoload
 (defun graphviz-dot-preview ()
   "Shows an example of the current dot file in an emacs buffer.
 This assumes that we are running GNU Emacs or XEmacs under a windowing system.
@@ -788,6 +790,7 @@ loaded in GNU Emacs, and `image-formats-alist' for XEmacs."
 ;;;;
 ;;;; View
 ;;;;
+;;;###autoload
 (defun graphviz-dot-view ()
   "Runs an external viewer. This creates an external process every time it
 is executed. If `graphviz-dot-save-before-view' is set, the current
